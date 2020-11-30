@@ -11,11 +11,11 @@ public class Calculator {
             
             Scanner scanner = new Scanner(System.in);
             
-            System.out.println("Entrer Premier Nombre");
+            System.out.println("Entrer Le Premier Nombre");
             num1 = scanner.nextDouble();
-            System.out.println("Entrer Deuxieme Nombre");
+            System.out.println("Entrer Le Deuxieme Nombre");
             num2 = scanner.nextDouble();
-            System.out.println("Choisi Operation");
+            System.out.println("Choisir Opération");
             opr = scanner.next().charAt(0);
             
             switch (opr) {
@@ -26,7 +26,7 @@ public class Calculator {
                 case '/' :
                     if(num2 == 0) {
                     	
-                    	System.out.println("Erruer du diviseur");
+                    	System.out.println("Erruer du diviseur, éviter de division sur 0");
                         
                     } else {
                     	res = num1 / num2;
